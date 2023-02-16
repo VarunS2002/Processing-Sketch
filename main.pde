@@ -364,6 +364,7 @@ void keyReleased() {
 
 class Info {
     String title = "Sketch";
+    String version = "1.0.0";
     String author = "VarunS2002";
     String message = "This is a simple sketching application created using Processing.";
     int w = 400;
@@ -385,7 +386,8 @@ class Info {
 
         textAlign(CENTER, TOP);
         textSize(12);
-        text(author, x + w/2, y + 45);
+        text("v" + version, x + w/2, y + 40);
+        text(author, x + w/2, y + 55);
         textSize(15);
         textAlign(LEFT, TOP);
         text(message, x + 20, y + 80, w - 40, h - 100);
